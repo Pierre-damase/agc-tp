@@ -399,7 +399,7 @@ def abundance_greedy_clustering(amplicon_file, minseqlen, mincount, chunk_size,
     return otu
 
 
-def write_otu(otu_list, output_file):
+def write_OTU(otu_list, output_file):
     """
     Parameter
     ---------
@@ -435,7 +435,7 @@ def main():
     otu = abundance_greedy_clustering(args.amplicon_file, args.minseqlen,
                                       args.mincount, args.chunk_size, args.kmer_size)
 
-    write_otu(otu, args.output_file)
+    write_OTU(otu, args.output_file)
 
 
 if __name__ == '__main__':
