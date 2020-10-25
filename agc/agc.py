@@ -410,7 +410,6 @@ def write_OTU(otu_list, output_file):
     >OTU_{numéro partant de 1} occurrence:{nombre d’occurrence à la déréplication}
     {séquence au format fasta}
     """
-    otu = [("TCAGCGAT", 8), ("TCAGCGAA",8), ("ACAGCGAT", 8), ("ACAGCGAA", 8)]
     with open(output_file, "w") as filout:
         for i, otu in enumerate(otu_list):
             filout.write(">OTU_{} occurrence:{}\n".format(i+1, otu[1]))
